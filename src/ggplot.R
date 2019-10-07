@@ -1,7 +1,6 @@
 library(tidyverse)
 gapminder <- read_csv("data/gapminder.csv")
 gapminder
-rm(gapminder_1977)
 gapminder_1977 <- filter(gapminder, year == 1977)
 gapminder_1977
 ggplot(data = gapminder_1977)
